@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid teal;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            text-align: center;
+            /* background-color: aquamarine; */
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .odd {
+            background-color: orange;
+        }
+
+        .even {
+            background-color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>We are learning HTML table.</h3>
+    <table>
+        <caption>Travel Data</caption>
+        <thead>
+            <tr class="even">
+                <th>Name</th>
+                <th>Contact Name</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="odd">
+                <td>ABC</td>
+                <td>Alina</td>
+                <td>London</td>
+            </tr>
+
+            <tr class="even">
+                <td>ABC</td>
+                <td>Alex</td>
+                <td>America</td>
+            </tr>
+
+            <tr class="odd">
+                <td>ABC</td>
+                <td>harry</td>
+                <td>India</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

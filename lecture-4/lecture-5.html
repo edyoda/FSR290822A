@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        /* element selector */
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        .table-width {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table -->
+    <table class="table-width">
+
+        <colgroup>
+            <col span="2" style="background-color: yellow;">
+            <col span="1" style="background-color: teal">
+        </colgroup>
+
+        <caption>Technology Table</caption>
+        <tr>
+            <th>S. NO.</th>
+            <th>Technology Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>JS</td>
+        </tr>
+    </table>
+
+
+    <!-- colspan: cell that span/merge the columns -->
+    <!-- rowspan: cell that span/merge the rows -->
+
+    <table class="table-width">
+        <caption>Person Data</caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact Number</th>
+                <th>Age</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alex</td>
+                <td colspan="2">9999999</td>
+                <!-- <td>30</td> -->
+                <td>Developer</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Harry</td>
+                <td>999999999
+                </td>
+                <td>35</td>
+                <td>HR</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Alina</td> -->
+                <td>999999999</td>
+                <td>40</td>
+                <td>Admin</td>
+                <td><img src="./download.png"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+<!-- task
+create a table for employee data(sno, name , age, salary, designation , profile image) and add image as well, style it
+   <td><img style="height: 80px; width: 80px"></td> -->
