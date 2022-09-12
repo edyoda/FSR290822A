@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        label {
+            color: teal;
+            font-size: 16px;
+            display: block;
+            margin: 10px;
+        }
+
+
+        input {
+            /* border: 1px solid teal; */
+            border: none;
+            border-bottom: 1px solid teal;
+            padding: 6px;
+        }
+
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form -->
+    <!-- get: means getting data from database (sign in)
+    post: sending data to database  (sign up)-->
+
+    <form method="post" action="#" target="_self">
+        <!-- contact information fields -->
+
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="First Name" name="fname">
+
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Last Name" name="lname">
+
+        <!-- input number -->
+        <label for="age">Age</label>
+        <input type="number" placeholder="Please enter age" name="age">
+
+        <!-- input contact -->
+        <label for="contact">Contact Number</label>
+        <input type="tel" placeholder="Please enter name" name="contact">
+
+        <!-- radio input -->
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- selecting colors -->
+        <label for="favcolor">Select your favorite color</label>
+        <input type="color" name="favcolor">
+
+        <!-- select date and time -->
+        <label for="birthday">Select Birthday</label>
+        <input type="date" name="birthday">
+
+        <label for="time">Select a time</label>
+        <input type="time" name="time">
+
+        <!-- select ranges -->
+        <label for="exp"> Select year of experience from 1 to 10</label>
+        <input type="number" name="exp" min="1" max="10">
+
+        <label for="val"> Select value from range</label>
+        <input type="range" name="val" min="0" max="50">
+
+        <!-- select files -->
+        <label for="files">Browse files</label>
+        <input type="file" name="files">
+
+        <!-- select mutiple files -->
+        <label for="files">Browse files</label>
+        <input type="file" name="files" multiple>
+
+        <!-- checkbox -->
+        <input type="checkbox" name="terms">
+        <label for="term">I agree to T&C <a href="#">Read here</a></label>
+
+        <!-- add an image -->
+        <input type="image" src="./download.png" alt="download" width="100px" height="100px">
+
+        <textarea name="about" rows="12" cols="30">Enter about yourself</textarea>
+
+        <button type="button">Submit</button>
+
+        <!-- reset -->
+        <input type="reset">
+        
+    </form>
+
+</body>
+
+</html>
+
+
+<!-- task
+2 forms and style
+signup: name, age, dob,gender, agree, email, pwd, hobbies
+login/signin:email & pwd -->
