@@ -34,22 +34,22 @@
     <!-- get: means getting data from database (sign in)
     post: sending data to database  (sign up)-->
 
-    <form method="post" action="#" target="_self">
+    <form method="post" action="#" target="_self" autocomplete="off">
         <!-- contact information fields -->
-
         <label for="fname">First Name</label>
-        <input type="text" placeholder="First Name" name="fname">
+        <input type="text" placeholder="First Name" name="fname" required autofocus>
 
         <label for="lname">Last Name</label>
-        <input type="text" placeholder="Last Name" name="lname">
+        <input type="text" placeholder="Last Name" name="lname" disabled>
 
         <!-- input number -->
         <label for="age">Age</label>
-        <input type="number" placeholder="Please enter age" name="age">
+        <input type="number" placeholder="Please enter age" name="age" size="3">
 
         <!-- input contact -->
         <label for="contact">Contact Number</label>
-        <input type="tel" placeholder="Please enter name" name="contact">
+        <input type="tel" placeholder="Please enter name" name="contact"
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
 
         <!-- radio input -->
         <input type="radio" name="gender" value="male">
@@ -64,7 +64,7 @@
 
         <!-- select date and time -->
         <label for="birthday">Select Birthday</label>
-        <input type="date" name="birthday">
+        <input type="date" name="birthday" readonly>
 
         <label for="time">Select a time</label>
         <input type="time" name="time">
@@ -93,11 +93,32 @@
 
         <textarea name="about" rows="12" cols="30">Enter about yourself</textarea>
 
-        <button type="button">Submit</button>
+        <!-- dropdown -->
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <optgroup>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </optgroup>
+        </select>
+
+        <!-- editable dropdown/ autocomplete dropdown -->
+        <input type="text" name="tech" list="tech">
+
+        <datalist id="tech">
+            <select>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">Js</option>
+                <option value="reactjs">ReactJs</option>
+            </select>
+        </datalist>
+
+        <button type="submit" formnovalidate>Submit</button>
 
         <!-- reset -->
         <input type="reset">
-        
     </form>
 
 </body>
@@ -105,8 +126,5 @@
 </html>
 
 
-<!-- task
-2 forms and style
-signup: name, age, dob,gender, agree, email, pwd, hobbies
-login/signin:email & pwd -->
-
+<!-- Regex
+https://regex101.com/ -->

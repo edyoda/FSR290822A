@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+
+    <style>
+        form {
+            border: 5px solid rgb(219, 213, 213);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid teal;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: left;
+        }
+
+        label {
+            color: teal;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: teal;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form method="post" target="_blank" action="#">
+        <h1>Welcome to Sign Up form</h1>
+        <div class="container">
+            <label for="uname">Username</label>
+            <input type="text" placeholder="Please enter username" name="uname">
+
+            <label for="mail">Email</label>
+            <input type="email" placeholder="Please enter email" name="mail">
+
+            <label for="passcode">Password</label>
+            <input type="password" placeholder="Please enter password" name="passcode">
+
+        </div>
+        <button type="submit">Sign Up</button>
+
+        <div>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+            <span><a href="#">Forget Password</a></span>
+        </div>
+        <div>
+
+        </div>
+    </form>
+</body>
+
+</html>
+
