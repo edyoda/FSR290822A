@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+
+</head>
+
+<body>
+    <!-- audio -->
+    <audio controls autplay muted preload="metadata">
+        <source src="./audio/file_example_MP3_700KB.mp3" type="audio/mp3">
+        <source src="./audio/file_example_OOG_1MG.ogg" type="audio/ogg">
+        <source src="./audio/file_example_WAV_1MG.wav" type="audio/wav">
+
+        <!-- fallback content -->
+        <!-- <p>Your browser does not support</p> -->
+        <embed src="./audio/file_example_MP3_700KB.mp3" type="audio/mp3">
+    </audio>
+
+
+    <!-- video -->
+    <video autoplay muted controls width="200px" height="200px">
+        <source src="./video/SampleVideo.mp4" type="video/mp4">
+        <source src="./video/SampleVideo.webm" type="video/webm">
+        <source src="./video/SampleVideo.ogg" type="video/ogg">
+
+        <!-- fallback content -->
+        <embed src="./video/SampleVideo.mp4" type="video/mp4">
+    </video>
+
+    <!-- add captions -->
+    <!-- SRT is not supported in chrome -->
+    <video autoplay muted controls width="200px" height="200px">
+        <source src="./video/SampleVideo.mp4" type="video/mp4">
+        <source src="./video/SampleVideo.webm" type="video/webm">
+        <source src="./video/SampleVideo.ogg" type="video/ogg">
+
+        <track src="./caption_vtt/intro.vtt" kind="captions" srclang="en" label="english">
+        <track src="./caption_vtt/intro.vtt" kind="captions" srclang="no" label="Norwegian">
+
+
+        <!-- fallback content -->
+        <embed src="./video/SampleVideo.mp4" type="video/mp4">
+    </video>
+
+    <!-- images -->
+    <img src="./download.png" alt="download">
+
+    <!-- adding images in background -->
+    <div style="background-image: url('./download.png'); width: 200px; height: 200px;">
+        Hello, Hi
+    </div>
+
+    <!-- iframes -->
+    <iframe src="https://www.edyoda.com/" title="edyoda" style="width: 400px; height: 400px;"></iframe>
+
+    <iframe src="https://www.youtube.com/embed/QFABcZ-H6MU"></iframe>
+
+    <!-- picture -->
+    <picture>
+        <source media="(min-width:650px)" srcset="./download.png">
+        <source media="(min-width:650px)" srcset="./assignment.png">
+
+        <!-- fallback content -->
+        <img src='./download.png' alt="html">
+    </picture>
+
+
+    <!-- figure -->
+    <figure>
+        <img src="./download.png" alt="download">
+        <figcaption>Fig 1.1</figcaption>
+    </figure>
+
+    <!-- form -->
+    <form>
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label>Name</label>
+            <input>
+
+            <label>Email</label>
+            <input>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label>Name</label>
+            <input>
+
+            <label>Email</label>
+            <input>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
+
+<!-- photoshop
+adobe
+indesign
+canva -->
+
+<!-- 
+task
+include video with captions -->
