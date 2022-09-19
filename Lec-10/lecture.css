@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: palevioletred; */
+
+    /* background-image: url('./download.png'); */
+
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    background-attachment: fixed;
+
+    background-size: cover;
+    /* background-size: 400px 400px; */
+
+    /* property shorthand: color image repeat attachment */
+    /* background: green url('./download.png') no-repeat fixed; */
+}
+
+#style-background {
+    width: 200px;
+    background-image: url('./download.png');
+    height: 300px;
+    background-size: 200px 100px;
+}
+
+.style-box-model {
+    height: 200px;
+    width: 200px;
+    border-color: red;
+    border-width: 4px;
+    border-style: solid;
+
+    /* shorthand: width style color  */
+    border: 4px solid red;
+
+    /* border-radius: 50%; */
+
+    /* margin */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    /* shorthand */
+    margin: 20px;
+
+    /* top/bottom left/right */
+    margin: 20px 40px;
+
+    /* top left/right bottom */
+    margin: 20px 10px 30px;
+
+    /* padding */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    /* shorthand */
+    padding: 20px;
+
+    /* top/bottom left/right */
+    padding: 20px 40px;
+}
+
+img {
+    width: 100%;
+}
+
+/* id selector */
+#style-list {
+    color: teal;
+}
+
+/* class selector */
+.style-class {
+    color: orange;
+}
