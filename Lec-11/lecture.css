@@ -1,0 +1,98 @@
+/* display */
+li {
+    display: inline;
+}
+
+span {
+    display: block;
+}
+
+#style-val {
+    /* display: inline-block;
+    height: 200px;
+    background-color: pink;
+    border: 2px solid violet; */
+
+    /* display: none; */
+
+    visibility: hidden;
+
+}
+
+
+/* position */
+
+.style-position {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    /* top right bottom left properties work only with position property except for static value */
+    position: static;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    /* top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px; */
+}
+
+
+.style-rel {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.style-absolute {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.style-sticky {
+    height: 50px;
+    border: 1px solid black;
+    position: sticky;
+    left: 30px;
+    top: 0px;
+    background-color: yellow;
+}
+
+.style-fixed {
+    height: 50px;
+    border: 1px solid black;
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    background-color: yellow;
+}
+
+/* overflow */
+.style-overflow {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    /* overflow: hidden; */
+
+    /* default */
+    /* overflow: visible; */
+
+    /* overflow: scroll; */
+
+    overflow: auto;
+}
