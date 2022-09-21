@@ -1,0 +1,70 @@
+/* combinators */
+
+/* descendant selector (space) */
+.style-div span {
+    color: pink
+}
+
+/* child selector (>) */
+.style-div>p {
+    color: orange;
+}
+
+/* general siblings (~) */
+.style-div~h2 {
+    color: blue;
+}
+
+/* adjacent siblings (+) */
+.style-div+p {
+    color: palevioletred;
+}
+
+/* shadow */
+.shadow-text {
+    /* h-shadow v-shadow color */
+    /* text-shadow: 1px 1px teal; */
+
+    /* to blur effect:  h-shadow v-shadow blur color */
+    /* text-shadow: 1px 1px 4px teal; */
+
+    color: white;
+    text-shadow: -2px -2px 4px black;
+
+    /* Font */
+    /* font-family: 'Dangrek', cursive; */
+    font-family: 'Ms Madi', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+.shadow-box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    /* h-shadow v-shadow color */
+    /* box-shadow: 3px 3px teal; */
+
+    /* to blur effect:  h-shadow v-shadow blur color */
+    /* box-shadow: 3px 3px 5px teal; */
+
+    /* right bottom left top */
+    box-shadow: 1px 1px 5px 5px teal inset;
+
+}
+
+.style-opacity {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    /* 0 & 1 */
+    opacity: 0.2;
+}
+
+img {
+    opacity: 0.4;
+}
