@@ -1,0 +1,110 @@
+.grad {
+    height: 200px;
+    width: 400px;
+    background-color: red;
+
+    /* standard */
+    /* top to bottom */
+    background-image: linear-gradient(teal, yellow);
+    background-image: -webkit-linear-gradient(teal, yellow);
+    background-image: -moz-linear-gradient(teal, yellow);
+    background-image: -o-linear-gradient(teal, yellow);
+
+
+    /* add browser prefix for rest */
+    background-image: linear-gradient(to right, teal, yellow);
+    background-image: -webkit-linear-gradient(to right, teal, yellow);
+    background-image: -moz-linear-gradient(to right, teal, yellow);
+    background-image: -o-linear-gradient(to right, teal, yellow);
+
+
+    /* add browser prefix for rest */
+    /* diagonal */
+    background-image: linear-gradient(145deg, teal, yellow, orange);
+
+
+    /* ading multiple color stops */
+    /* add browser prefix for rest */
+    background-image: linear-gradient(to right, teal 10%, indigo 20%, pink 40%, orange);
+
+    /* add browser prefix for rest */
+    background-image: repeating-linear-gradient(to right, teal 10%, indigo 20%, pink 50%, orange 60%);
+
+    /* add browser prefix for rest */
+    background-image: -plinear-gradient(145deg, teal 10%, indigo 20%, pink 50%, orange 60%);
+
+}
+
+.radial {
+    height: 400px;
+    background-color: red;
+
+    background-image: radial-gradient(teal, yellow, orange);
+    background-image: -webkit-radial-gradient(teal, yellow, orange);
+    background-image: -moz-radial-gradient(teal, yellow, orange);
+    background-image: -o-radial-gradient(teal, yellow, orange);
+
+    background-image: repeating-radial-gradient(teal 10%, yellow 30%, orange 50%);
+    background-image: -webkit-repeating-radial-gradient(teal 10%, yellow 30%, orange 50%);
+    background-image: -moz-repeating-radial-gradient(teal 10%, yellow 30%, orange 50%);
+    background-image: -o-repeating-radial-gradient(teal 10%, yellow 30%, orange 50%);
+
+}
+
+/* flex */
+
+.flex-container {
+    height: 200px;
+    display: flex;
+    /* background-color: teal; */
+
+
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
+
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+
+    /* add browser prefix here */
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
+
+    /* add browser prefix here */
+
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+}
+
+.flex-container div {
+    width: 200px;
+    border: 1px solid black;
+}
+
+
+.align-items {
+    height: 200px;
+    display: flex;
+    border: 1px solid black;
+
+    align-items: stretch;
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+
+}
+
+.align-items div {
+    width: 200px;
+    border: 1px solid black;
+}
+
+/* 
+flex-grow
+flex-shrink
+flex-basis */
