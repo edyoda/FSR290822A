@@ -1,0 +1,189 @@
+/* selector: pseudo class */
+
+div:nth-child(1) {
+    height: 100px;
+    width: 100px;
+    background-color: palevioletred;
+}
+
+div:nth-child(2) {
+    height: 100px;
+    width: 100px;
+    background-color: palegoldenrod;
+
+    /* give any custom name to animation-name; */
+    animation-name: animate;
+
+    /* complete animation in 4seconds time */
+    animation-duration: 4s;
+
+    /* delay the process of animation by 2s */
+    animation-delay: 2s;
+
+    /* no. of times iteration should work */
+    animation-iteration-count: 3;
+
+    animation-iteration-count: infinte;
+
+    /* runs forward first, then backward */
+    animation-direction: alternate;
+
+    /* runs backward first, then forward */
+    animation-direction: alternate-reverse;
+
+    /* speed of animation */
+
+    /* slow start, bit faster in end */
+    animation-timing-function: ease-in;
+
+    /*  fast start, slow in end */
+    animation-timing-function: ease-out;
+
+    /* constant speed */
+    animation-timing-function: linear;
+
+    /* animation property shorthand */
+    animation: animate 4s linear 2s infinite alternate;
+
+    /* multiple animations */
+    /* animation: animate 4s linear 2s infinite alternate, animate-name 4s linear 2s infinite alternate; */
+
+}
+
+@keyframes animate {
+    0% {
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: yellowgreen;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+}
+
+/* example */
+.bounce {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 175, 131);
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes bounce {
+    0% {
+         margin-top: 0;
+    }
+
+    100% {
+        margin-top: 250px;
+    }
+} */
+
+
+/* 0% to 100% */
+@keyframes bounce {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 250px;
+    }
+}
+
+/* pseudo class and elements  */
+/* syntax
+selector: pseudo class {
+
+} */
+
+/* style links: maintain the order*/
+/* anchor pseudo class */
+
+/* unvisited link */
+.style-link:link {
+    color: palegreen;
+    text-decoration: none;
+}
+
+/* visited link */
+.style-link:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+/* user mouse over the link */
+.style-link:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* active link */
+.style-link:active {
+    color: pink;
+    text-decoration: none;
+}
+
+p b:first-child {
+    color: aquamarine;
+}
+
+
+/* pseudo elememts */
+/* syntax
+selector:: pseudo elements {
+
+} */
+
+p::first-line {
+    color: teal;
+}
+
+p::first-letter {
+    font-size: 40px;
+}
+
+h1::before {
+    content: url('./download.png');
+}
+
+h1::after {
+    content: url('./download.png');
+}
+
+/* when we use float */
+/* section::after {
+    clear: both;
+ } */
+
+
+ul li::marker {
+    color: red;
+    font-size: 30px;
+}
+
+
+
+img {
+    width: 100px;
+}
+
+img:hover {
+    opacity: 0.6;
+}
