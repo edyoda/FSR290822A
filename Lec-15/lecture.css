@@ -1,0 +1,121 @@
+.div-media {
+    background-color: yellow;
+    height: 100px;
+    display: none;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* image pixelete more than its original size */
+img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* mobile device (min value till 400px) */
+@media only screen and (max-width: 400px) {
+    .div-media {
+        background-color: orange;
+        display: block;
+    }
+
+    .container {
+        background-image: url('./download.png');
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+}
+
+/* small device (large phone and tablets) 600 px and above */
+@media only screen and (min-width: 600px) {
+    .div-media {
+        background-color: red;
+        display: block;
+    }
+
+    .container {
+        background-image: url('./facebook.png');
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* tablets/ ipad  768px and above*/
+@media only screen and (min-width: 768px) {
+    .div-media {
+        background-color: pink;
+        display: block;
+    }
+
+    .container {
+        background-image: url('./download.png');
+    }
+}
+
+/* large (992 px and above) */
+@media only screen and (min-width: 992px) {
+    .div-media {
+        background-color: blue;
+        display: block;
+    }
+
+    .container {
+        background-image: url('./download.png');
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .div-media {
+        background-color: teal;
+        display: block;
+    }
+
+    .container {
+        background-image: url('./download.png');
+    }
+}
+
+/* 1200px and above */
+@media only screen and (min-width: 1200px),
+screen and (min-width: 1400px) {
+    .div-media {
+        display: none;
+    }
+
+    .container {
+        background-image: url('./download.png');
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+/* 200px till 1000px */
+/* @media screen and (min-width: 200px) and (max-width: 1000px) {
+    .div-media {
+
+    }
+} */

@@ -44,6 +44,7 @@ div:nth-child(2) {
 
     /* animation property shorthand */
     animation: animate 4s linear 2s infinite alternate;
+    
 
     /* multiple animations */
     /* animation: animate 4s linear 2s infinite alternate, animate-name 4s linear 2s infinite alternate; */
