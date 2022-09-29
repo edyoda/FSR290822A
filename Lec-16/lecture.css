@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    width: 25%;
+    float: left;
+    /* margin: 10px; */
+}
+
+.column-left {
+    background-color: palevioletred;
+}
+
+.column-right {
+    background-color: turquoise;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    .column {
+        width: 100%;
+    }
+}
