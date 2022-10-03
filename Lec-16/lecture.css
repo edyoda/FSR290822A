@@ -17,14 +17,16 @@
 }
 
 
-@media only screen and (max-width: 992px) {
-    .column {
-        width: 50%;
-    }
-}
+
 
 @media only screen and (max-width: 564px) {
     .column {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .column {
+        width: 50%;
     }
 }
