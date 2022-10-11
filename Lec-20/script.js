@@ -143,6 +143,7 @@ console.log(person);
 // take input using prompt
 
 var store = prompt('Please enter name');
+
 console.log(store);
 
 
