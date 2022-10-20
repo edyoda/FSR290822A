@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Moviemania</h1>
+                <p>Movies for everyone</p>
+                <form id="search-movies">
+                    <input type="text" placeholder="Search movies..." />
+                </form>
+            </div>
+        </header>
+        <div id="movie-list">
+            <h2 class="title">Movies to watch</h2>
+            <ul>
+                <li>
+                    <span class="name">Bandersnatch</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Conjuring</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">YJHD</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        <form id="add-movie">
+            <input type="checkbox" id="hide" />
+            <label for="hide"> Hide the list</label>
+            <input type="text" placeholder="Add a movie..." />
+            <button>Add</button>
+        </form>
+    </div>
+
+
+    <!-- external js -->
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
+
+
+<!-- 
+CRUD Application
+create read/display update delete
+
+task
+create a Grocery/Todo app, functionaly (add, delete, search, hide)-->
