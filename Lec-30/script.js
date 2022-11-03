@@ -125,4 +125,32 @@ class Triangle extends Shape {
 var t = new Triangle(3, 'right-angled');//id, type of triangle
 t.type_of_traingle();
 
-t.circumference();//both child classes can't access each other's data
+// t.circumference();//both child classes can't access each other's data
+
+
+// Abstraction
+class Abtract {
+    constructor(text) {
+        this._text = text;
+    }
+
+
+    doSomething() {
+        throw new Error('You have to implement something');
+    }
+}
+
+class Der extends Abtract {
+    constructor(text) {
+        super(text)
+    }
+
+    doSomething() {
+        console.log('Method implemented');
+    }
+}
+
+var b = new Der('hello');
+b.doSomething();
+
+// Typescript
