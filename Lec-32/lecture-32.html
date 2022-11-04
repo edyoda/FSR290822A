@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <button id="getdata">Get</button>
+    <button id="postdata">Post</button>
+    <button id="clickcommon">Click</button>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Please enter name" id="name">
+        <p id="name-error" style="color: red;"></p>
+
+        <label>Designation</label>
+        <input type="text" placeholder="Please enter designation" id="designation">
+        <p id="design-error" style="color: red;"></p>
+
+    </form>
+
+
+    <form>
+        <label>Contact</label>
+        <input type="tel" placeholder="Please enter contact" id="contact">
+        <p id="contact-error" style="color: red;"></p>
+
+        <label>Email</label>
+        <input type="email" placeholder="Please enter email" id="email">
+        <p id="email-error" style="color: red;"></p>
+
+        <button type="button" id="button">Submit</button>
+    </form>
+
+    <!-- external js -->
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
+
+
+<!-- task (https://jsonplaceholder.typicode.com/users)
+get the api data and display data in the form of cards in UI
+
+look for post request api
+take input from user and post data in DB through http request  -->
