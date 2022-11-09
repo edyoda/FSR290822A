@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navigation bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 3% 5%;
+}
+
+.navbar-brand {
+    width: 150px;
+    height: 100%;
+}
+
+.brand-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.language-dropdown {
+    border: none;
+    color: white;
+    background: transparent;
+}
+
+.dropdown-container {
+    border: 1px solid white;
+    padding: 10px 5px;
+    border-radius: 4px;
+    background-color: rgb(121, 116, 116);
+}
+
+.sign-in {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.navbar-nav-items {
+    display: flex;
+    gap: 10px;
+}
+
+/* Z-index */
+/* 
+.position-rel {
+    position: relative;
+    top: 20px;
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+}
+
+.position-abs {
+    position: absolute;
+    top: 20px;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    z-index: 10;
+}
+
+.style-image {
+    width: 100%;
+} */
+
+/* Banner */
+
+.bg-image-container {
+    width: 100%;
+    height: 500px;
+}
+
+.hero-bg-image {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.hero-card {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.hero-subtitle,
+.hero-description {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+.hero-description {
+    margin: 0 50px;
+}
+
+.email-input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+}
+
+.email-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.form-container {
+    width: 50%;
+    height: 50px;
+    position: relative;
+}
+
+.primary-button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-size: 16px;
+    height: 50px;
+}
