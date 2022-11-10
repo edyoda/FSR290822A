@@ -158,3 +158,135 @@ body {
     font-size: 16px;
     height: 50px;
 }
+
+/* Feature-1 */
+.feature {
+    border-top: 8px solid rgb(109, 102, 102);
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.feature-details {
+    text-align: center;
+    padding: 0 5px;
+    margin-left: 40px;
+}
+
+.feature-title {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.feature-subtitle {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.feature-image-container {
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+}
+
+.feature-image {
+    width: 100%;
+}
+
+
+.feature-background-video-container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 12%;
+    height: 100%;
+    z-index: -2;
+    max-width: 73%;
+}
+
+.feature-background-video {
+    width: 100%;
+}
+
+/* Feature-2 */
+.feature-2-poster-container {
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    gap: 15px;
+    padding: 15px;
+    height: 10px;
+}
+
+.poster-container {
+    width: 20%;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.poster-details {
+    width: 50%;
+}
+
+.download-gif-container {
+    width: 20%;
+    height: 100%;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+}
+
+/* Feature-3 */
+.feature-3-background-video {
+    z-index: -2;
+    max-width: 64%;
+    top: 9%;
+    left: 19%;
+}
+
+
+/* Footer */
+footer {
+    border-top: 8px solid rgb(109, 102, 102);
+    padding: 32px 400px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+
+}
+
+.footer-row-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.footer-row-1>h4 {
+    font-size: 15px;
+    align-self: flex-start;
+}
+
+.footer-row-3 {
+    width: 28%;
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px 5px;
+}
