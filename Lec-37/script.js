@@ -59,9 +59,23 @@ console.log("present at " + result);
 // Sorting (sort method work only for array of string (in dictionary manner))
 // bubble sort
 
-// function bubbleSort(arr) {
+function bubbleSort(arr) {
+  var isSwapped;
+  for (var i = arr.length; i > 0; i--) {
+    isSwapped = false;
+    for (var j = 0; j < i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; //swap
+        isSwapped = true;
+      }
+    }
 
-// }
+    if (!isSwapped) {
+      break;
+    }
+  }
+  return arr;
+}
 
-// bubbleSort([90, 9, 20, 78, 100, 45]);
-
+var resultSort = bubbleSort([90, 9, 20, 78, 100, 45]);
+console.log(resultSort);
