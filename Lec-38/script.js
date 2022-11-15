@@ -51,6 +51,7 @@ stack.printStack();
 var res = [];
 var tempStack = [];
 
+//sorting stack
 function sortStack(resArr) {
   //merged Stack
   while (resArr.length != 0) {
@@ -66,6 +67,7 @@ function sortStack(resArr) {
   }
 }
 
+//merging stack
 function sortedMerge(stackOne, stackTwo) {
   while (stackOne.length != 0) {
     res.push(stackOne[stackOne.length - 1]);
@@ -78,7 +80,7 @@ function sortedMerge(stackOne, stackTwo) {
   }
   console.log(res);
 
-  sortStack(res);
+  sortStack(res);//res is merged array
 }
 
 var stackOne = [];
