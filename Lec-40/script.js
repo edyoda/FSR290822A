@@ -112,6 +112,7 @@ listSecond.add(55);
 // merging
 
 function merge(L1, L2) {
+  console.log(L1, L2);
   var L3 = new Node(null);
   var prev = L3;
 
@@ -143,9 +144,9 @@ console.log(finalList);
 console.log("merged list");
 
 while (finalList.next) {
-  console.log(finalList.head.next);
+  console.log(finalList);
   finalList = finalList.next;
 }
 
-//task 
+//task
 //sorting of linked list
