@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+
+}
+
+.header{
+  background-color: red;
+}
+/* 
+.someClass {
+  color: blue;
+}
+
+#id-one{
+  border: 1px solid black;
+}
+  */
+
+
+
+@media (max-width:700px) {
+
+  .container{
+    flex-direction: column;
+  }
+}
