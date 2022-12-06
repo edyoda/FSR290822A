@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 64px;
+    background-color: white;
+    height: 80px;
+    box-shadow: 0 1px 1px #ccc;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.left{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+
+}
+
+.logo p{
+    background-image: linear-gradient(269deg,#0048ff,#0096ff),linear-gradient(#000,#000);
+    color: #0084ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-weight:900;    
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 2.1em;
+    margin-top: 0;
+    width: 130px;
+
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: -.9px;
+    text-align: left;
+}
+
+.logo span{
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+.right{
+    display: flex;
+    align-items: center;
+    width: 32%;
+    justify-content: space-between;
+}
+
+.p{
+    max-width: 345px;
+    opacity: .6;
+    font-family: Raleway,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: .4px;
+    text-align: left;
+    color: rgba(0,0,0,.6);
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    padding: 0px 20px;
+
+}

@@ -1,0 +1,52 @@
+.main{
+    width: 70%;
+    margin: 16px auto;
+}
+
+.mainTitle{
+    width: fit-content;
+    margin: 0;
+    font-family: Raleway,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -.6px;
+    text-align: left;
+    color: #000;
+}
+
+
+.filter{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.filter img{
+    height: 25px;
+    width: 25px;
+}
+
+.filter span{
+    font-size: .85em;
+    font-weight: 600;
+    margin-left: 0.5em;
+}
+
+
+.filterPills{
+    margin-top: .5em;
+}
+
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    margin-top: 2em;
+    max-width: 100%;
+}
+
+
