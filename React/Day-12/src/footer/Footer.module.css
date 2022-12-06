@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 200px;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 2em 1em;
+    box-sizing: border-box;
+}

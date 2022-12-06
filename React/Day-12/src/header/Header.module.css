@@ -1,0 +1,33 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+
+.cart{
+    margin-right: 1.5em;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.count{
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+
+
+
+
