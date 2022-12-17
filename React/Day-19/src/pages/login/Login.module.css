@@ -1,0 +1,41 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 50%;
+  background-color: white;
+  box-shadow: 10px -5px 20px grey;
+  padding: 1em;
+}
+
+.formControl {
+  margin: 0.5em 0;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 0.5em;
+}
+
+.formControlButton {
+  margin-top: 2em;
+}
+
+.input:focus-visible {
+  border: none;
+}
